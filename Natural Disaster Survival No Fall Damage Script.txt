@@ -1,0 +1,16 @@
+  
+local playername = game.Players.LocalPlayer.Name
+
+while true do
+    for _,c in pairs(game.Workspace:GetDescendants()) do
+      if c.Name == playername and c.Parent == Workspace then
+          for _,c in pairs(c:GetDescendants()) do
+              if c.Name == ("FallDamageScript") then
+                   c:Destroy()
+                   print("Fall Damage Disabled (Script by aii)")
+                end
+            end
+        end
+    end
+    wait()
+end
